@@ -1,8 +1,12 @@
+// oefenen met console.log
 console.log("De afdeling Sales heeft " + departments.sales.numberOfEmployees + " medewerkers")
 console.log("Marketing is een leuke afdeling om te werken. " + departments.marketing.description)
 console.log("De afdeling Customer Service heeft " + departments["customer-service"].numberOfEmployees + " medewerkers")
 console.log("Sales is een uitdagende afdeling om te werken als Verkoopmanager." + departments.sales.jobs[1].description)
 
+
+
+// prompt 1
 const userInput = prompt('Over welke afdeling wil je meer informatie? Kies uit: [marketing / sales / customer-service]');
 console.log(userInput);
 
@@ -14,6 +18,7 @@ else {
 }
 
 
+//prompt 2
 const jobInput = prompt('Je koos ' + userInput + '. Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.\n0: ' + departments[userInput].jobs[0].title + '\n1: ' + departments[userInput].jobs[1].title + '\n2: ' + departments[userInput].jobs[2].title + '\n3: ' + departments[userInput].jobs[3].title);
 
 console.log(jobInput);
